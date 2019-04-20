@@ -1,4 +1,7 @@
-
+*{
+	padding: 0;
+	margin: 0;
+}
 .nav{
 	margin:0;
 	z-index: 99;
@@ -10,8 +13,8 @@
 	line-height: 28px;
 }
 .container{
-	margin-right: 60px;
-	margin-left: 60px;
+	margin-right: 65px;
+	margin-left: 65px;
 	padding-left: 11px;
 	padding-right: 11px;	
 }
@@ -21,8 +24,17 @@
 	text-decoration: none;
 	vertical-align: top;
 }
-.container span a em{
+/*.container span a i{
 	font-size: 24px;
 	vertical-align: middle;
 	height: 23px;
+}*/
+.nav-right{
+	float: right;
+}
+.nav-right > span{
+	padding: 0 12px;
+}
+.glyphicon glyphicon-globe{
+	margin-right:10px; 
 }
