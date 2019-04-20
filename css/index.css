@@ -1,0 +1,28 @@
+
+.nav{
+	margin:0;
+	z-index: 99;
+	width: auto;
+}
+.nav-height{
+	background-color: #222222;
+	height: 28px;
+	line-height: 28px;
+}
+.container{
+	margin-right: 60px;
+	margin-left: 60px;
+	padding-left: 11px;
+	padding-right: 11px;	
+}
+.container span a {
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	vertical-align: top;
+}
+.container span a em{
+	font-size: 24px;
+	vertical-align: middle;
+	height: 23px;
+}
