@@ -196,7 +196,7 @@
                   <i class="fa fa-angle-down"></i>
                 </a>
                 <!-- 隐藏部分 悬停出现 -->
-                <div class="hw-hide">
+                <!-- <div class="hw-hide">
                   <div class="container">
                     <div class="row">
                       <div class="row-pic">
@@ -230,10 +230,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
-
-
-
+                </div> -->
 
               </li>
               <li>
@@ -264,11 +261,142 @@
       </nav>
     </div>
   </header>
-  <!-- 轮播 -->
-  <div id="banner">
-    <div class="">
+  <!-- 轮播部分 -->
+  <div class="banner">
+    <ul class="img">
+      <li><img src="imags/01.jpg" /></li>
+      <li><img src="imags/02.jpg"  /></li>
+      <li><img src="imags/03.jpg"  /></li>
+    </ul>
+    <ul class="num"></ul>
+    <div class="btn btn_l">&lt;</div>
+    <div class="btn btn_r">&gt;</div>
+  </div>
+  <div class="container">
+    <div class="upMove">
+      <div class="up-row">
+        <div class="up-list" style="border-left: 0px;">
+          <div class="list">
+            <img src="imags/QQ-02.png">
+            <div>
+              <h3>个人用户
+                <i class="fa fa-external-link "></i>
+              </h3>
+              <p>手机，笔记本和平板等个人及家用产品</p>
+            </div>
+          </div>
+        </div>
+        <div class="up-list">
+          <div class="list">
+            <img src="imags/QQ-03.png">
+            <div>
+              <h3>企业用户
+                <i class="fa fa-external-link "></i>
+              </h3>
+              <p>企业商用产品、解决方案及云服务</p>
+            </div>
+          </div>
+        </div>
+        <div class="up-list">
+          <div class="list">
+            <img src="imags/QQ-04.png">
+            <div>
+              <h3>运营商用户
+                <i class="fa fa-external-link "></i>
+              </h3>
+              <p>运营商网络解决方案、产品及服务</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 了解更多 - 1部分-->
+  <div class="product-style">
+    <div class="container" style="padding-right: 0;">
+      <div class="pro-row">
+        <div class="pro-list">
+          <div class="card">
+            <div class="cardText">
+              <div class="card-img">
+                <img class="img-1" src="imags/hw-8.png">
+                <img class="img-2" src="imags/hw-6.png">
+              </div>
+              <div class="card-text">
+                <img src="imags/hw-5.png">
+                <p>未来影像</p>
+                <br>
+                <br>
+                <span>了解更多
+                  <i class="fa fa fa-long-arrow-right" style="font-size: 20px;margin-left: 15px"></i>
+                </span>
+                <div style="color:#fff;font-size: 12px; margin-top: 80px;">
+                  <small style="color: #fff; font-size: 80%;">*图片仅供参考，请以实物为准</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-bg"></div>
+        </div>
+        <div class="pro-list list1">
+          <div class="card-2">
+            <img src="imags/hw-1.jpg">
+            <div class="ca2-text">
+              <div class="text-name">产品</div>
+              <div class="text-content">
+                <h3>HUAWEI Mate20 系列</h3>
+                <p>智慧新高度</p>
+              </div>
+              <span class="read-more">立即购买
+                <i class="fa fa-long-arrow-right"></i>
+              </span>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 了解更多-2部分 -->
+  <div class="see-no">
+    <div class="see-card">
+      <img src="imags/hw-9.png">
+      <div class="see-more">
+        <p>了解更多
+          <i class="fa fa-long-arrow-right"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 展会活动 -->
+  <div class="activity">
+    <div class="container">
+      <div class="title">
+        <h2>展会活动</h2>
+        <div class="check">
+          <p>查看全部
+            <i class="fa fa-chevron-right"></i>
+          </p>
+        </div>
+      </div>
+      <!-- 轮播2 -->
+      <div class="act-row">
 
-            
+
+      </div>
+    </div>
+  </div>
+  <!-- 成功故事 -->
+  <div class="story">
+    <div class="container">
+      <div class="title" style="margin-bottom: 0;">
+        <h2>成功故事</h2>
+        <div class="check">
+          <p>查看全部
+            <i class="fa fa-chevron-right"></i>
+          </p>
+        </div>
+      </div>
+      <div class="sto-row">
 
 
        
@@ -277,6 +405,7 @@
 
 <!-- JQuery -->
 <script type="text/javascript">
+
 $(document).ready(function(){
   $(".arrow").click(function(){
     $(".arrow-to").slideToggle();
@@ -292,10 +421,89 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".ic-1").hover(function(){
-    $(".hw-hide").slideDown()();
+  $(".ic-1").mouseover(function(){
+    $(".hw-hide").slideDown();
+  });
+  $(".ic-1").mouseleave(function(){
+    $(".hw-hide").slideUp();
   });
 });
+// 轮播
+$(document).ready(function () {
+        var i = 0;
+        var clone = $(".banner .img li").first().clone();
+        $(".banner .img").append(clone);                
+        var size = $(".banner .img li").size();        
+        console.log(size);
+        for (var j = 0; j < size-1; j++) {
+            $(".banner .num").append("<li></li>");
+        }
+
+        $(".banner .num li").first().addClass("on");
+
+        /*自动轮播*/
+var t = setInterval(function () {
+            i++;
+            move();
+            },2000);
+
+        /*鼠标悬停*/
+        $(".banner").hover(function () {
+            clearInterval(t);
+        }, function () {
+            t = setInterval(function () {
+                i++;
+                move();
+                }, 2000); 
+        });
+   /*鼠标滑入*/
+        $(".banner .num li").hover(function () {
+
+            var index = $(this).index();
+            i = index;
+            $(".banner .img").stop().animate({ left: -index * 660 }, 500);
+            $(this).addClass("on").siblings().removeClass("on");
+        });
+        /*向左按钮*/
+        $(".banner .btn_l").click(function () {
+            i--;
+            move();
+        })
+       /*向右按钮*/
+        $(".banner .btn_r").click(function () {
+            i++;
+            move();
+        })
+        /*移动事件*/
+        function move() {
+            if (i == size) {
+                $(".banner .img").css({ left: 0 });
+                i = 1;
+            }
+            if (i == -1) {
+                $(".banner .img").css({ left: -(size - 1) * 660 });
+                i = size - 2;
+            }
+            $(".banner .img").stop().animate({ left: -i * 660 }, 660);
+
+            if (i == size - 1) {
+               $(".banner .num li").eq(0).addClass("on").siblings().removeClass("on");
+            } else {
+                $(".banner .num li").eq(i).addClass("on").siblings().removeClass("on");
+            }
+        }
+    });
+$(document).ready(function(){
+  $(".list h3").hover(function(){
+    $(".list i").css("opacity","1");
+  });
+  $(".list h3").mouseleave(function(){
+    $(".list i").css("opacity","0");
+  })
+});
+
+
+
 </script>
     
 </body>
