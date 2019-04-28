@@ -263,7 +263,7 @@
     margin-bottom:100px;
 
 }
-.pro-row{
+.row{
     margin-left: -11px;
     margin-right: -11px;
 }
@@ -429,4 +429,130 @@
 }
 .story{
 	margin-bottom:60px;
+}
+.sto-row{
+	display: flex;
+	margin-right: -11px;
+	margin-left:-11px;
+}
+.sto-list{
+	margin-bottom:40px;
+	padding: 0 33px;
+	width: 32%;
+	float: left;
+	display: flex;
+}
+.sto-card{
+	position: relative;
+	background:#dde6ed;
+	margin-top:90px;
+	width: 100%;
+	border-radius: 5px;
+}
+.ca-img{
+	margin-top: -90px;
+    height: 178px;
+    max-width: 100%;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.ca-img img{
+	position: absolute;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    transition: transform 0.1s;
+}
+.ca-img img:hover{
+	transform: translateX(-20px);
+}
+.ca-content{
+	padding-bottom: 60px;
+	padding: 30px 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.con-title{
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+}
+.con-text{
+	height: 128px;
+	margin-bottom:20px;
+}
+.con-text h3{
+	font-size: 22px;
+    line-height: 32px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.do-more{
+	font-size: 22px;
+	bottom:30px;
+}
+.do-more i{
+	font-size: 20px;
+	margin-left:15px;
+}
+.news{
+	margin-bottom: 100px;
+}
+.news-title{
+	margin-bottom: 60px;
+}
+.news-title h2{
+	float: left;
+	margin-bottom: 0;
+	width: 65%;
+}
+.news-list{
+	position: relative;
+    float: left;
+    width: 42%;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.news-card{
+	margin-left: 20px;
+    margin-right: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.news-img{
+	width: 100%;
+	height: 220px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.news-content{
+	height: 276px;
+	overflow:hidden;
+	padding: 30px 40px;
+    background: #dde6ed;
+	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.content-ns{
+	height: 152px;
+	overflow: hidden;
+}
+.title-ns{
+	font-size: 14px;
+	line-height: 22px;
+	color: #666666;
+}
+.text-ns h3{
+	font-size: 22px;
+    line-height: 32px;
+    margin-top: 5px;
+}
+.more-ns{
+	font-size: 22px;
+	line-height: 34px;
+	position: absolute;
+	bottom:30px;
 }
