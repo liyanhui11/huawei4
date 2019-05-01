@@ -189,7 +189,7 @@
             <img src="imags/huawei.png" >
           </div>
           <div class="nav-middle">
-            <ul class="mid-context" style="position: static;">
+            <ul class="mid-context">
               <li>
                 <span class="fa fa-mobile-phone"></span>
                 <a class="ic-1" >手机、笔记本&平板...
@@ -548,6 +548,9 @@
   </div>
   <!-- 了解更多-2部分 -->
   <div class="see-no">
+    <div class="hero-img">
+      <img src="imags/05.jpg">
+    </div>
     <div class="see-card">
       <img src="imags/hw-9.png">
       <div class="see-more">
@@ -1050,16 +1053,10 @@ var t = setInterval(function () {
                 i = 1;
             }
             if (i == -1) {
-                $(".banner .img").css({ left: -(size - 1) * 560});
+                $(".banner .img").css({ left: -(size - 1) *556 });
                 i = size - 2;
             }
-            $(".banner .img").stop().animate({ left: -i * 560 }, 558);
-
-            if (i == size - 1) {
-               $(".banner .num li").eq(0).addClass("on").siblings().removeClass("on");
-            } else {
-                $(".banner .num li").eq(i).addClass("on").siblings().removeClass("on");
-            }
+            $(".banner .img").stop().animate({ left: -i *556  }, 560);
         }
     });
 $(document).ready(function(){
